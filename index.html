@@ -16,12 +16,18 @@
             <a class="nav-link" href="#Introduction">Introduction</a>
           </li>
           <li>
-            <a class="nav-link" href="#Basic_Selectors">Basic Selectors</a>
+            <a class="nav-link" href="#Simple_selectors">Simple selectors</a>
           </li>
           <li>
-            <a class="nav-link" href="#Attribute_Selectors"
-              >Attribute Selectors</a
+            <a class="nav-link" href="#Combinators">Combinators</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Attribute_selectors"
+              >Attribute selectors</a
             >
+          </li>
+          <li>
+            <a class="nav-link" href="#Pseudo-classes">Pseudo-classes</a>
           </li>
         </ul>
       </nav>
@@ -37,42 +43,162 @@
             selectors we can use.
           </p>
         </section>
-        <section id="Basic_Selectors" class="main-section">
-          <h1>Basic Selectors</h1>
+
+        <!--simple selectors-->
+        <section id="Simple_Selectors" class="main-section">
+          <h1>Simple Selectors</h1>
           <table class="reference-table">
             <thead>
               <tr>
                 <th class="column1">Selector</th>
                 <th>Description</th>
-                <th>Code</th>
+                <th>Example</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Type</td>
+                <td>Type <code>element</code></td>
                 <td>Selects an element based on its HTML tag</td>
                 <td>h1</td>
               </tr>
               <tr>
-                <td>Class</td>
-                <td>Selects elements based on their class</td>
+                <td>Class <code>.class</code></td>
+                <td>Selects every element with this class attribute</td>
                 <td>.class</td>
               </tr>
               <tr>
-                <td>ID</td>
+                <td>Multiple classes <code>.class1.class2.class3</code></td>
+                <td>
+                  Selects every element with these classes within its class
+                  attribute
+                </td>
+                <td>.class1.class2.class3</td>
+              </tr>
+              <tr>
+                <td>Specific elements by class <code>element.class</code></td>
+                <td>
+                  Selects elements of the specified type with this class
+                  attribute
+                </td>
+                <td>h1.class</td>
+              </tr>
+              <tr>
+                <td>ID <code>#id</code></td>
                 <td>Selects an element based on its ID</td>
                 <td>#id</td>
               </tr>
               <tr>
-                <td>Universal (*)</td>
+                <td>Universal <code>*</code></td>
                 <td>Selects all elements</td>
                 <td>*</td>
               </tr>
             </tbody>
           </table>
         </section>
-        <section id="Attribute_Selectors" class="main-section">
-          <h1>Attribute Selectors</h1>
+
+        <!--combinators-->
+        <section id="Combinators" class="main-section">
+          <h1>Combinators</h1>
+          <table class="reference-table">
+            <thead>
+              <tr>
+                <th class="column1">Selector</th>
+                <th>Description</th>
+                <th>Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  Group/selector list <code>element, element</code> whitespace
+                  after comma optional
+                </td>
+                <td>Selects multiple elements at once, seperated by a comma</td>
+                <td>h1, p, div</td>
+              </tr>
+              <tr>
+                <td>Descendant <code>element element</code></td>
+                <td>Selects all descendants of the specified element</td>
+                <td>h1 p</td>
+              </tr>
+              <tr>
+                <td>Child <code>element > element</code></td>
+                <td>
+                  Selects only the direct descendants of the specified element
+                </td>
+                <td>h1 > p</td>
+              </tr>
+              <tr>
+                <td>Adjacent/next sibling <code>element + element</code></td>
+                <td>
+                  Selects any element which is directly after the specified
+                  element
+                </td>
+                <td>h1 + p</td>
+              </tr>
+              <tr>
+                <td>
+                  General/subsequent sibling <code>element ~ element</code>
+                </td>
+                <td>
+                  Selects any element which comes after the specified element
+                  and shares the same parent
+                </td>
+                <td>h1 ~ p</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!--attribute selectors-->
+        <section id="Attribute_selectors" class="main-section">
+          <h1>Attribute selectors</h1>
+          <table class="reference-table">
+            <thead>
+              <tr>
+                <th class="column1">Selector</th>
+                <th>Description</th>
+                <th>Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>[att]</code></td>
+                <td>Selects...</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><code>[att=val]</code></td>
+                <td>Selects...</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><code>[att~=val]</code></td>
+                <td>Selects...</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><code>[att|=val]</code></td>
+                <td>Selects...</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><code>[att^=val]</code></td>
+                <td>Selects...</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><code>[att$=val]</code></td>
+                <td>Selects...</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><code>[att*=val]</code></td>
+                <td>Selects...</td>
+                <td>...</td>
+              </tr>
+            </tbody>
+          </table>
         </section>
       </main>
     </div>
