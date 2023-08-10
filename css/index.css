@@ -1,9 +1,35 @@
-code {
-  display: block;
-}
-
 .wrapper {
   background-color: aliceblue;
   margin: 0 auto;
   width: 90%;
+}
+
+/*CODE*/
+code {
+  background-color: white;
+  border-radius: 5px;
+  display: inline-block;
+  line-height: 1.4;
+  padding: 3px 5px;
+}
+
+.declaration {
+  display: block;
+  white-space: nowrap;
+}
+
+.selector {
+  color: red;
+}
+
+.property {
+  color: blue;
+}
+
+.property::before {
+  content: "\a0\a0";
+}
+
+.value {
+  color: green;
 }

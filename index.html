@@ -16,11 +16,6 @@
             <a class="nav-link" href="#Simple_selectors">Simple selectors</a>
           </li>
           <li>
-            <a class="nav-link" href="#Compound_selectors"
-              >Compound selectors</a
-            >
-          </li>
-          <li>
             <a class="nav-link" href="#Grouping_selector">Grouping selector</a>
           </li>
           <li>
@@ -36,6 +31,9 @@
           </li>
           <li>
             <a class="nav-link" href="#Pseudo-elements">Pseudo-elements</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Glossary">Glossary</a>
           </li>
         </ul>
       </nav>
@@ -55,91 +53,100 @@
             </thead>
             <tbody>
               <tr>
-                <td>Type <code>element</code></td>
+                <td>Type<br /><code>element</code></td>
                 <td>Selects an element based on its HTML tag</td>
-                <td>h1</td>
+                <td>
+                  <code
+                    ><span class="selector">p</span> {<span class="declaration">
+                      <span class="property">font-size: </span
+                      ><span class="value">18px;</span></span
+                    >
+                    }
+                  </code>
+                </td>
               </tr>
               <tr>
-                <td>Class <code>.class</code></td>
+                <td>Class<br /><code>.class</code></td>
                 <td>Selects every element with this class attribute</td>
-                <td>.class</td>
+                <td>
+                  <code
+                    ><span class="selector">.link</span> {<span
+                      class="declaration"
+                    >
+                      <span class="property">font-weight: </span
+                      ><span class="value">bold;</span></span
+                    >
+                    }
+                  </code>
+                </td>
               </tr>
               <tr>
-                <td>Multiple classes <code>.class1.class2.class3</code></td>
+                <td>
+                  Multiple classes<br /><code>.class1.class2.class3</code>
+                </td>
                 <td>
                   Selects every element with these classes within its class
                   attribute
                 </td>
-                <td>.class1.class2.class3</td>
+                <td>
+                  <code
+                    ><span class="selector">.menu.option.disabled</span> {<span
+                      class="declaration"
+                    >
+                      <span class="property">opacity: </span
+                      ><span class="value">0.5;</span></span
+                    >
+                    }
+                  </code>
+                </td>
               </tr>
               <tr>
-                <td>Specific elements by class <code>element.class</code></td>
+                <td>
+                  Specific elements by class<br /><code>element.class</code>
+                </td>
                 <td>
                   Selects elements of the specified type with this class
                   attribute
                 </td>
-                <td>h1.class</td>
+                <td>
+                  <code
+                    ><span class="selector">p.important</span> {<span
+                      class="declaration"
+                    >
+                      <span class="property">color: </span
+                      ><span class="value">red;</span></span
+                    >
+                    }
+                  </code>
+                </td>
               </tr>
               <tr>
-                <td>ID <code>#id</code></td>
+                <td>ID<br /><code>#id</code></td>
                 <td>Selects an element based on its ID</td>
-                <td>#id</td>
+                <td>
+                  <code
+                    ><span class="selector">#logo</span> {<span
+                      class="declaration"
+                    >
+                      <span class="property">margin: </span
+                      ><span class="value">10px;</span></span
+                    >
+                    }
+                  </code>
+                </td>
               </tr>
               <tr>
-                <td>Universal <code>*</code></td>
+                <td>Universal<br /><code>*</code></td>
                 <td>Selects all elements</td>
-                <td>*</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-
-        <!--compound selectors-->
-        <section id="Attribute_selectors" class="main-section">
-          <h1>Compound selectors</h1>
-          <table class="reference-table">
-            <thead>
-              <tr>
-                <th class="column1">Selector</th>
-                <th>Description</th>
-                <th>Example</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><code>[att]</code></td>
-                <td>Selects...</td>
-                <td>...</td>
-              </tr>
-              <tr>
-                <td><code>[att=val]</code></td>
-                <td>Selects...</td>
-                <td>...</td>
-              </tr>
-              <tr>
-                <td><code>[att~=val]</code></td>
-                <td>Selects...</td>
-                <td>...</td>
-              </tr>
-              <tr>
-                <td><code>[att|=val]</code></td>
-                <td>Selects...</td>
-                <td>...</td>
-              </tr>
-              <tr>
-                <td><code>[att^=val]</code></td>
-                <td>Selects...</td>
-                <td>...</td>
-              </tr>
-              <tr>
-                <td><code>[att$=val]</code></td>
-                <td>Selects...</td>
-                <td>...</td>
-              </tr>
-              <tr>
-                <td><code>[att*=val]</code></td>
-                <td>Selects...</td>
-                <td>...</td>
+                <td>
+                  <code
+                    ><span class="selector">*</span> {<span class="declaration">
+                      <span class="property">font-family: </span
+                      ><span class="value">Helvetica;</span></span
+                    >
+                    }
+                  </code>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -158,39 +165,19 @@
             </thead>
             <tbody>
               <tr>
-                <td><code>[att]</code></td>
-                <td>Selects...</td>
-                <td>...</td>
-              </tr>
-              <tr>
-                <td><code>[att=val]</code></td>
-                <td>Selects...</td>
-                <td>...</td>
-              </tr>
-              <tr>
-                <td><code>[att~=val]</code></td>
-                <td>Selects...</td>
-                <td>...</td>
-              </tr>
-              <tr>
-                <td><code>[att|=val]</code></td>
-                <td>Selects...</td>
-                <td>...</td>
-              </tr>
-              <tr>
-                <td><code>[att^=val]</code></td>
-                <td>Selects...</td>
-                <td>...</td>
-              </tr>
-              <tr>
-                <td><code>[att$=val]</code></td>
-                <td>Selects...</td>
-                <td>...</td>
-              </tr>
-              <tr>
-                <td><code>[att*=val]</code></td>
-                <td>Selects...</td>
-                <td>...</td>
+                <td>Grouping selector<br /><code>element, element</code></td>
+                <td>Selects multiple elements at once</td>
+                <td>
+                  <code
+                    ><span class="selector">h2, p, .search</span> {<span
+                      class="declaration"
+                    >
+                      <span class="property">font-style: </span
+                      ><span class="value">italics;</span></span
+                    >
+                    }
+                  </code>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -209,42 +196,76 @@
             </thead>
             <tbody>
               <tr>
-                <td>
-                  Group/selector list <code>element, element</code> (whitespace
-                  after comma optional)
-                </td>
-                <td>Selects multiple elements at once</td>
-                <td>h1, p, div</td>
-              </tr>
-              <tr>
-                <td>Descendant <code>element element</code></td>
+                <td>Descendant<br /><code>element element</code></td>
                 <td>Selects all descendants of the specified element</td>
-                <td>h1 p</td>
+                <td>
+                  <code
+                    ><span class="selector">main p</span> {<span
+                      class="declaration"
+                    >
+                      <span class="property">line-height: </span
+                      ><span class="value">1.6;</span></span
+                    >
+                    }
+                  </code>
+                </td>
               </tr>
               <tr>
-                <td>Child <code>element > element</code></td>
+                <td>Child<br /><code>element > element</code></td>
                 <td>
                   Selects only the direct descendants of the specified element
                 </td>
-                <td>h1 > p</td>
+                <td>
+                  <code
+                    ><span class="selector">ul > li</span> {<span
+                      class="declaration"
+                    >
+                      <span class="property">text-decoration: </span
+                      ><span class="value">underline;</span></span
+                    >
+                    }
+                  </code>
+                </td>
               </tr>
               <tr>
-                <td>Adjacent/next sibling <code>element + element</code></td>
+                <td>
+                  Adjacent/next sibling<br /><code>element + element</code>
+                </td>
                 <td>
                   Selects any element which is directly after the specified
                   element
                 </td>
-                <td>h1 + p</td>
+                <td>
+                  <code
+                    ><span class="selector">h1 + p</span> {<span
+                      class="declaration"
+                    >
+                      <span class="property">font-weight: </span
+                      ><span class="value">bold;</span></span
+                    >
+                    }
+                  </code>
+                </td>
               </tr>
               <tr>
                 <td>
-                  General/subsequent sibling <code>element ~ element</code>
+                  General/subsequent sibling<br /><code>element ~ element</code>
                 </td>
                 <td>
                   Selects any element which comes after the specified element
                   and shares the same parent
                 </td>
-                <td>h1 ~ p</td>
+                <td>
+                  <code
+                    ><span class="selector">p ~ img</span> {<span
+                      class="declaration"
+                    >
+                      <span class="property">display </span
+                      ><span class="value">block;</span></span
+                    >
+                    }
+                  </code>
+                </td>
               </tr>
             </tbody>
           </table>
