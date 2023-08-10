@@ -13,10 +13,15 @@
         <header>CSS Selectors Cheat Sheet</header>
         <ul>
           <li>
-            <a class="nav-link" href="#Introduction">Introduction</a>
+            <a class="nav-link" href="#Simple_selectors">Simple selectors</a>
           </li>
           <li>
-            <a class="nav-link" href="#Simple_selectors">Simple selectors</a>
+            <a class="nav-link" href="#Compound_selectors"
+              >Compound selectors</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="#Grouping_selector">Grouping selector</a>
           </li>
           <li>
             <a class="nav-link" href="#Combinators">Combinators</a>
@@ -29,21 +34,14 @@
           <li>
             <a class="nav-link" href="#Pseudo-classes">Pseudo-classes</a>
           </li>
+          <li>
+            <a class="nav-link" href="#Pseudo-elements">Pseudo-elements</a>
+          </li>
         </ul>
       </nav>
 
       <!--main-->
       <main>
-        <section id="Introduction" class="main-section">
-          <h1>Introduction</h1>
-          <p>
-            <strong>Selectors</strong> are used to identify and target one or
-            more HTML elements on a page. These elements can then be styled by
-            using <strong>CSS rules</strong>. There are many different types of
-            selectors we can use.
-          </p>
-        </section>
-
         <!--simple selectors-->
         <section id="Simple_Selectors" class="main-section">
           <h1>Simple Selectors</h1>
@@ -96,6 +94,108 @@
           </table>
         </section>
 
+        <!--compound selectors-->
+        <section id="Attribute_selectors" class="main-section">
+          <h1>Compound selectors</h1>
+          <table class="reference-table">
+            <thead>
+              <tr>
+                <th class="column1">Selector</th>
+                <th>Description</th>
+                <th>Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>[att]</code></td>
+                <td>Selects...</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><code>[att=val]</code></td>
+                <td>Selects...</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><code>[att~=val]</code></td>
+                <td>Selects...</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><code>[att|=val]</code></td>
+                <td>Selects...</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><code>[att^=val]</code></td>
+                <td>Selects...</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><code>[att$=val]</code></td>
+                <td>Selects...</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><code>[att*=val]</code></td>
+                <td>Selects...</td>
+                <td>...</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!--grouping selector-->
+        <section id="Grouping_selector" class="main-section">
+          <h1>Grouping selector</h1>
+          <table class="reference-table">
+            <thead>
+              <tr>
+                <th class="column1">Selector</th>
+                <th>Description</th>
+                <th>Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>[att]</code></td>
+                <td>Selects...</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><code>[att=val]</code></td>
+                <td>Selects...</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><code>[att~=val]</code></td>
+                <td>Selects...</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><code>[att|=val]</code></td>
+                <td>Selects...</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><code>[att^=val]</code></td>
+                <td>Selects...</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><code>[att$=val]</code></td>
+                <td>Selects...</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td><code>[att*=val]</code></td>
+                <td>Selects...</td>
+                <td>...</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
         <!--combinators-->
         <section id="Combinators" class="main-section">
           <h1>Combinators</h1>
@@ -110,10 +210,10 @@
             <tbody>
               <tr>
                 <td>
-                  Group/selector list <code>element, element</code> whitespace
-                  after comma optional
+                  Group/selector list <code>element, element</code> (whitespace
+                  after comma optional)
                 </td>
-                <td>Selects multiple elements at once, seperated by a comma</td>
+                <td>Selects multiple elements at once</td>
                 <td>h1, p, div</td>
               </tr>
               <tr>
