@@ -56,8 +56,11 @@
                 <td>Type<br /><code>element</code></td>
                 <td>Selects an element based on its HTML tag</td>
                 <td>
-                  <code
-                    ><span class="selector">p</span> {<span class="declaration">
+                  <code>
+                    <span class="selector">p</span> {
+                    <span class="comment"
+                      >/* Styles applied to all &lt;p&gt; elements */</span
+                    ><span class="declaration">
                       <span class="property">font-size: </span
                       ><span class="value">18px;</span></span
                     >
@@ -69,10 +72,11 @@
                 <td>Class<br /><code>.class</code></td>
                 <td>Selects every element with this class attribute</td>
                 <td>
-                  <code
-                    ><span class="selector">.link</span> {<span
-                      class="declaration"
-                    >
+                  <code>
+                    <span class="selector">.link</span> {
+                    <span class="comment"
+                      >/* Styles applied to elements with class 'link' */</span
+                    ><span class="declaration">
                       <span class="property">font-weight: </span
                       ><span class="value">bold;</span></span
                     >
@@ -89,10 +93,12 @@
                   attribute
                 </td>
                 <td>
-                  <code
-                    ><span class="selector">.menu.option.disabled</span> {<span
-                      class="declaration"
-                    >
+                  <code>
+                    <span class="selector">.menu.option.disabled</span> {
+                    <span class="comment"
+                      >/* Styles applied to elements with all three classes
+                      */</span
+                    ><span class="declaration">
                       <span class="property">opacity: </span
                       ><span class="value">0.5;</span></span
                     >
@@ -109,10 +115,12 @@
                   attribute
                 </td>
                 <td>
-                  <code
-                    ><span class="selector">p.important</span> {<span
-                      class="declaration"
-                    >
+                  <code>
+                    <span class="selector">p.important</span> {
+                    <span class="comment"
+                      >/* Styles applied to &lt;p&gt; elements with class
+                      'important' */</span
+                    ><span class="declaration">
                       <span class="property">color: </span
                       ><span class="value">red;</span></span
                     >
@@ -124,10 +132,11 @@
                 <td>ID<br /><code>#id</code></td>
                 <td>Selects an element based on its ID</td>
                 <td>
-                  <code
-                    ><span class="selector">#logo</span> {<span
-                      class="declaration"
-                    >
+                  <code>
+                    <span class="selector">#logo</span> {
+                    <span class="comment"
+                      >/* Styles applied to elements with ID 'logo' */</span
+                    ><span class="declaration">
                       <span class="property">margin: </span
                       ><span class="value">10px;</span></span
                     >
@@ -139,8 +148,11 @@
                 <td>Universal<br /><code>*</code></td>
                 <td>Selects all elements</td>
                 <td>
-                  <code
-                    ><span class="selector">*</span> {<span class="declaration">
+                  <code>
+                    <span class="selector">*</span> {
+                    <span class="comment"
+                      >/* Styles applied to all elements */</span
+                    ><span class="declaration">
                       <span class="property">font-family: </span
                       ><span class="value">Helvetica;</span></span
                     >
@@ -168,10 +180,13 @@
                 <td>Grouping selector<br /><code>element, element</code></td>
                 <td>Selects multiple elements at once</td>
                 <td>
-                  <code
-                    ><span class="selector">h2, p, .search</span> {<span
-                      class="declaration"
+                  <code>
+                    <span class="selector">h2, p, .search</span> {
+                    <span class="comment"
+                      >/* Styles applied to &lt;h2&gt; and &lt;p&gt; elements,
+                      and all elements with class 'search' */</span
                     >
+                    <span class="declaration">
                       <span class="property">font-style: </span
                       ><span class="value">italics;</span></span
                     >
@@ -199,10 +214,12 @@
                 <td>Descendant<br /><code>element element</code></td>
                 <td>Selects all descendants of the specified element</td>
                 <td>
-                  <code
-                    ><span class="selector">main p</span> {<span
-                      class="declaration"
-                    >
+                  <code>
+                    <span class="selector">main p</span> {
+                    <span class="comment"
+                      >/* Styles applied to all &lt;p&gt; elements inside
+                      &lt;main&gt; */</span
+                    ><span class="declaration">
                       <span class="property">line-height: </span
                       ><span class="value">1.6;</span></span
                     >
@@ -216,10 +233,12 @@
                   Selects only the direct descendants of the specified element
                 </td>
                 <td>
-                  <code
-                    ><span class="selector">ul > li</span> {<span
-                      class="declaration"
-                    >
+                  <code>
+                    <span class="selector">ul > li</span> {
+                    <span class="comment"
+                      >/* Styles applied to &lt;li&gt; elements that are direct
+                      children of &lt;ul&gt; */</span
+                    ><span class="declaration">
                       <span class="property">text-decoration: </span
                       ><span class="value">underline;</span></span
                     >
@@ -228,18 +247,18 @@
                 </td>
               </tr>
               <tr>
-                <td>
-                  Adjacent/next sibling<br /><code>element + element</code>
-                </td>
+                <td>Adjacent sibling<br /><code>element + element</code></td>
                 <td>
                   Selects any element which is directly after the specified
                   element
                 </td>
                 <td>
-                  <code
-                    ><span class="selector">h1 + p</span> {<span
-                      class="declaration"
-                    >
+                  <code>
+                    <span class="selector">h1 + p</span> {
+                    <span class="comment"
+                      >/* Styles applied to &lt;p&gt; directly following
+                      &lt;h1&gt; */</span
+                    ><span class="declaration">
                       <span class="property">font-weight: </span
                       ><span class="value">bold;</span></span
                     >
@@ -248,19 +267,19 @@
                 </td>
               </tr>
               <tr>
-                <td>
-                  General/subsequent sibling<br /><code>element ~ element</code>
-                </td>
+                <td>General sibling<br /><code>element ~ element</code></td>
                 <td>
                   Selects any element which comes after the specified element
                   and shares the same parent
                 </td>
                 <td>
-                  <code
-                    ><span class="selector">p ~ img</span> {<span
-                      class="declaration"
-                    >
-                      <span class="property">display </span
+                  <code>
+                    <span class="selector">p ~ img</span> {
+                    <span class="comment"
+                      >/* Styles applied to &lt;img&gt; that follow &lt;p&gt;
+                      */</span
+                    ><span class="declaration">
+                      <span class="property">display: </span
                       ><span class="value">block;</span></span
                     >
                     }
@@ -285,38 +304,529 @@
             <tbody>
               <tr>
                 <td><code>[att]</code></td>
-                <td>Selects...</td>
-                <td>...</td>
+                <td>
+                  Selects all elements with the specified attribute, regardless
+                  of its value
+                </td>
+                <td>
+                  <code>
+                    <span class="selector">img[alt]</span> {
+                    <span class="comment"
+                      >/* Styles applied to &lt;img&gt; elements with an 'alt'
+                      attribute */</span
+                    ><span class="declaration">
+                      <span class="property">border: </span
+                      ><span class="value">2px solid;</span></span
+                    >
+                    }
+                  </code>
+                </td>
               </tr>
               <tr>
                 <td><code>[att=val]</code></td>
-                <td>Selects...</td>
-                <td>...</td>
+                <td>Selects all elements with the specified attribute value</td>
+                <td>
+                  <code>
+                    <span class="selector">input[type="submit"]</span> {
+                    <span class="comment"
+                      >* Styles applied to &lt;input&gt; elements with type
+                      'submit' */</span
+                    ><span class="declaration">
+                      <span class="property">padding: </span
+                      ><span class="value">8px 20px;</span></span
+                    >
+                    }
+                  </code>
+                </td>
               </tr>
               <tr>
                 <td><code>[att~=val]</code></td>
-                <td>Selects...</td>
-                <td>...</td>
+                <td>
+                  Selects an element based on whether its attribute contains a
+                  specific value among multiple space-separated values
+                </td>
+                <td>
+                  <code>
+                    <span class="selector">[class~="featured"]</span> {
+                    <span class="comment"
+                      >/* Styles applied to elements containing 'featured'
+                      within its class attributes */</span
+                    ><span class="declaration">
+                      <span class="property">box-shadow: </span
+                      ><span class="value">0 4px 8px grey;</span></span
+                    >
+                    }
+                  </code>
+                </td>
               </tr>
               <tr>
                 <td><code>[att|=val]</code></td>
-                <td>Selects...</td>
-                <td>...</td>
+                <td>
+                  Selects all elements where the attribute value starts with a
+                  specified value followed by a hyphen
+                </td>
+                <td>
+                  <code>
+                    <span class="selector">[lang|="en"]</span> {
+                    <span class="comment"
+                      >/* Styles applied to elements with language 'en' or 'en-'
+                      */</span
+                    ><span class="declaration">
+                      <span class="property">color: </span
+                      ><span class="value">blue;</span></span
+                    >
+                    }
+                  </code>
+                </td>
               </tr>
               <tr>
                 <td><code>[att^=val]</code></td>
-                <td>Selects...</td>
-                <td>...</td>
+                <td>
+                  Selects all elements where the attribute value starts with a
+                  specified string
+                </td>
+                <td>
+                  <code>
+                    <span class="selector">a[href^="https"]</span> {
+                    <span class="comment"
+                      >/* Styles applied to &lt;a&gt; elements with links
+                      starting with 'https' */</span
+                    ><span class="declaration">
+                      <span class="property">text-decoration: </span
+                      ><span class="value">none;</span></span
+                    >
+                    }
+                  </code>
+                </td>
               </tr>
               <tr>
                 <td><code>[att$=val]</code></td>
-                <td>Selects...</td>
-                <td>...</td>
+                <td>
+                  Selects all elements where the attribute value ends with a
+                  specified string
+                </td>
+                <td>
+                  <code>
+                    <span class="selector">img[src$=".png"]</span> {
+                    <span class="comment"
+                      >/* Styles applied to &lt;img&gt; elements with image
+                      sources ending in '.png' */</span
+                    ><span class="declaration">
+                      <span class="property">width: </span
+                      ><span class="value">100px;</span></span
+                    >
+                    }
+                  </code>
+                </td>
               </tr>
               <tr>
                 <td><code>[att*=val]</code></td>
-                <td>Selects...</td>
-                <td>...</td>
+                <td>
+                  Selects all elements where the attribute value contains a
+                  specified substring
+                </td>
+                <td>
+                  <code>
+                    <span class="selector">[class*="btn"]</span> {
+                    <span class="comment"
+                      >/* Styles applied to elements with class containing 'btn'
+                      */</span
+                    ><span class="declaration">
+                      <span class="property">cursor: </span
+                      ><span class="value">pointer;</span></span
+                    >
+                    }
+                  </code>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!--pseudo-classes-->
+        <section id="Pseudo-classes" class="main-section">
+          <h1>Pseudo-classes</h1>
+          <table class="reference-table">
+            <thead>
+              <tr>
+                <th class="column1">Selector</th>
+                <th>Description</th>
+                <th>Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>:link</code></td>
+                <td>Selects unvisited links</td>
+                <td>
+                  <code>
+                    <span class="selector">a:link</span> {
+                    <span class="comment"
+                      >/* Styles applied to unvisited links */</span
+                    ><span class="declaration">
+                      <span class="property">color: </span
+                      ><span class="value">blue;</span></span
+                    >
+                    }
+                  </code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>:visited</code></td>
+                <td>Selects visited links</td>
+                <td>
+                  <code>
+                    <span class="selector">a:visited</span> {
+                    <span class="comment"
+                      >/* Styles applied to visited links */</span
+                    ><span class="declaration">
+                      <span class="property">color: </span
+                      ><span class="value">purple;</span></span
+                    >
+                    }
+                  </code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>:hover</code></td>
+                <td>Selects an element when the mouse is over it</td>
+                <td>
+                  <code>
+                    <span class="selector">a:hover</span> {
+                    <span class="comment"
+                      >/* Styles applied to links on hover */</span
+                    ><span class="declaration">
+                      <span class="property">color: </span
+                      ><span class="value">blue;</span></span
+                    >
+                    }
+                  </code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>:active</code></td>
+                <td>Selects the active link</td>
+                <td>
+                  <code>
+                    <span class="selector">a:active</span> {
+                    <span class="comment"
+                      >/* Styles applied to the active link */</span
+                    ><span class="declaration">
+                      <span class="property">color: </span
+                      ><span class="value">red;</span></span
+                    >
+                    }
+                  </code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>:focus</code></td>
+                <td>Selects the element that has focus</td>
+                <td>
+                  <code>
+                    <span class="selector">input:focus</span> {
+                    <span class="comment"
+                      >/* Styles applied to the focused input */</span
+                    ><span class="declaration">
+                      <span class="property">border-color: </span
+                      ><span class="value">green;</span></span
+                    >
+                    }
+                  </code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>:checked</code></td>
+                <td>
+                  Selects input elements that are checked, like checkboxes or
+                  radio buttons
+                </td>
+                <td>
+                  <code>
+                    <span class="selector">input:checked</span> {
+                    <span class="comment"
+                      >/* Styles applied to checked input elements */</span
+                    ><span class="declaration">
+                      <span class="property">border-color: </span
+                      ><span class="value">blue;</span></span
+                    >
+                    }
+                  </code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>:disabled</code></td>
+                <td>Selects elements that are disabled</td>
+                <td>
+                  <code>
+                    <span class="selector">button:disabled</span> {
+                    <span class="comment"
+                      >/* Styles applied to disabled buttons */</span
+                    ><span class="declaration">
+                      <span class="property">opacity: </span
+                      ><span class="value">0.5;</span></span
+                    >
+                    }
+                  </code>
+                </td>
+              </tr>
+
+              <tr>
+                <td><code>:first-child</code></td>
+                <td>Selects the first child of its parent</td>
+                <td>
+                  <code>
+                    <span class="selector">p:first-child</span> {
+                    <span class="comment"
+                      >/* Styles applied to first paragraph of its parent
+                      */</span
+                    ><span class="declaration">
+                      <span class="property">font-weight: </span
+                      ><span class="value">bold;</span></span
+                    >
+                    }
+                  </code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>:last-child</code></td>
+                <td>Selects the last child of its parent</td>
+                <td>
+                  <code>
+                    <span class="selector">div:last-child</span> {
+                    <span class="comment"
+                      >/* Styles applied to last div of its parent */</span
+                    ><span class="declaration">
+                      <span class="property">border: </span
+                      ><span class="value">1px solid black;</span></span
+                    >
+                    }
+                  </code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>:nth-child(n)</code></td>
+                <td>
+                  Selects elements based on their position in a group of
+                  siblings
+                </td>
+                <td>
+                  <code>
+                    <span class="selector">li:nth-child(odd)</span> {
+                    <span class="comment"
+                      >/* Styles applied to odd list items */</span
+                    ><span class="declaration">
+                      <span class="property">background-color: </span
+                      ><span class="value">lightgrey;</span></span
+                    >
+                    }
+                  </code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>:first-of-type</code></td>
+                <td>
+                  Selects the first element of its type among its siblings
+                </td>
+                <td>
+                  <code>
+                    <span class="selector">p:first-of-type</span> {
+                    <span class="comment"
+                      >/* Styles applied to the first paragraph among its
+                      siblings */</span
+                    ><span class="declaration">
+                      <span class="property">color: </span
+                      ><span class="value">red;</span></span
+                    >
+                    }
+                  </code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>:last-of-type</code></td>
+                <td>Selects the last element of its type among its siblings</td>
+                <td>
+                  <code>
+                    <span class="selector">p:last-of-type</span> {
+                    <span class="comment"
+                      >/* Styles applied to the last paragraph among its
+                      siblings */</span
+                    ><span class="declaration">
+                      <span class="property">text-decoration: </span
+                      ><span class="value">underline;</span></span
+                    >
+                    }
+                  </code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>:nth-of-type()</code></td>
+                <td>
+                  Selects elements based on their position among siblings of the
+                  same type
+                </td>
+                <td>
+                  <code>
+                    <span class="selector">p:nth-of-type(odd)</span> {
+                    <span class="comment"
+                      >/* Styles applied to odd-numbered paragraphs */</span
+                    ><span class="declaration">
+                      <span class="property">font-weight: </span
+                      ><span class="value">bold;</span></span
+                    >
+                    }
+                  </code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>:not(selector)</code></td>
+                <td>Selects elements that do not match a specific selector</td>
+                <td>
+                  <code>
+                    <span class="selector">p:not(.special)</span> {
+                    <span class="comment"
+                      >/* Styles applied to paragraphs that are not of class
+                      'special' */</span
+                    ><span class="declaration">
+                      <span class="property">color: </span
+                      ><span class="value">grey;</span></span
+                    >
+                    }
+                  </code>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!--pseudo-elements-->
+        <section id="Pseudo-elements" class="main-section">
+          <h1>Pseudo-elements</h1>
+          <table class="reference-table">
+            <thead>
+              <tr>
+                <th class="column1">Selector</th>
+                <th>Description</th>
+                <th>Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>::before</code></td>
+                <td>Inserts content before the selected element</td>
+                <td>
+                  <code>
+                    <span class="selector">p::before</span> {
+                    <span class="comment"
+                      >/* Styles applied to content before paragraphs */</span
+                    ><span class="declaration">
+                      <span class="property">content: </span
+                      ><span class="value">"🔹";</span></span
+                    >
+                    }
+                  </code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>::after</code></td>
+                <td>Inserts content after the selected element</td>
+                <td>
+                  <code>
+                    <span class="selector">div::after</span> {
+                    <span class="comment"
+                      >/* Styles applied to content after divs */</span
+                    ><span class="declaration">
+                      <span class="property">content: </span
+                      ><span class="value">"⭐️";</span></span
+                    >
+                    }
+                  </code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>::first-line</code></td>
+                <td>Selects the first line of text within an element</td>
+                <td>
+                  <code>
+                    <span class="selector">p::first-line</span> {
+                    <span class="comment"
+                      >/* Styles applied to the first line of paragraphs
+                      */</span
+                    ><span class="declaration">
+                      <span class="property">font-style: </span
+                      ><span class="value">italic;</span></span
+                    >
+                    }
+                  </code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>::last-line</code></td>
+                <td>Selects the last line of text within an element</td>
+                <td>
+                  <code>
+                    <span class="selector">p::last-line</span> {
+                    <span class="comment"
+                      >/* Styles applied to the last line of paragraphs */</span
+                    ><span class="declaration">
+                      <span class="property">font-weight: </span
+                      ><span class="value">bold;</span></span
+                    >
+                    }
+                  </code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>::first-letter</code></td>
+                <td>Selects the first letter of a specified element</td>
+                <td>
+                  <code>
+                    <span class="selector">p::first-letter</span> {
+                    <span class="comment"
+                      >/* Styles applied to the first letter of paragraphs
+                      */</span
+                    ><span class="declaration">
+                      <span class="property">font-size: </span
+                      ><span class="value">larger;</span></span
+                    >
+                    }
+                  </code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>::last-letter</code></td>
+                <td>Selects the last letter of a specified element</td>
+                <td>
+                  <code>
+                    <span class="selector">p::last-letter</span> {
+                    <span class="comment"
+                      >/* Styles applied to the last letter of paragraphs
+                      */</span
+                    ><span class="declaration">
+                      <span class="property">color: </span
+                      ><span class="value">green;</span></span
+                    >
+                    }
+                  </code>
+                </td>
+              </tr>
+              <tr>
+                <td><code>::selection</code></td>
+                <td>
+                  Styles the portion of an element that is selected by the user
+                </td>
+                <td>
+                  <code>
+                    <span class="selector">::selection</span> {
+                    <span class="comment"
+                      >/* Styles applied to selected text */</span
+                    ><span class="declaration">
+                      <span class="property">background-color: </span
+                      ><span class="value">yellow;</span></span
+                    >
+                    }
+                  </code>
+                </td>
               </tr>
             </tbody>
           </table>
