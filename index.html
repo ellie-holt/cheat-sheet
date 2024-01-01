@@ -362,8 +362,8 @@
               <tr>
                 <td><code>[att|=val]</code></td>
                 <td>
-                  Selects all elements where the attribute value starts with a
-                  specified value followed by a hyphen
+                  Selects all elements where the attribute value starts the
+                  specified value, or the specified value followed by a hyphen
                 </td>
                 <td>
                   <code>
@@ -521,7 +521,10 @@
               </tr>
               <tr>
                 <td><code>:focus</code></td>
-                <td>Selects the element that has focus</td>
+                <td>
+                  Selects the element that has focus, such as when a user clicks
+                  on a form element or selects an element using the tab key
+                </td>
                 <td>
                   <code>
                     <span class="selector">input:focus</span> {
@@ -556,7 +559,10 @@
               </tr>
               <tr>
                 <td><code>:disabled</code></td>
-                <td>Selects elements that are disabled</td>
+                <td>
+                  Selects elements that are disabled (cannot be activated or
+                  focused on)
+                </td>
                 <td>
                   <code>
                     <span class="selector">button:disabled</span> {
@@ -573,7 +579,9 @@
 
               <tr>
                 <td><code>:first-child</code></td>
-                <td>Selects the first child of its parent</td>
+                <td>
+                  Selects the first element among a group of sibling elements
+                </td>
                 <td>
                   <code>
                     <span class="selector">p:first-child</span> {
@@ -590,7 +598,9 @@
               </tr>
               <tr>
                 <td><code>:last-child</code></td>
-                <td>Selects the last child of its parent</td>
+                <td>
+                  Selects the last element among a group of sibling elements
+                </td>
                 <td>
                   <code>
                     <span class="selector">div:last-child</span> {
@@ -608,9 +618,30 @@
                 <td><code>:nth-child(n)</code></td>
                 <td>
                   Selects elements based on their position in a group of
-                  siblings
+                  siblings - can accept an algebraic expression to determine
+                  which elements are selected
                 </td>
                 <td>
+                  <code>
+                    <span class="selector">li:nth-child(3)</span> {
+                    <span class="comment"
+                      >/* Styles applied to the third list item */</span
+                    ><span class="declaration">
+                      <span class="property">font-weight: </span
+                      ><span class="value">bold;</span></span
+                    >
+                    }
+                  </code>
+                  <code>
+                    <span class="selector">li:nth-child(4n)</span> {
+                    <span class="comment"
+                      >/* Styles applied to every fourth list item */</span
+                    ><span class="declaration">
+                      <span class="property">background-color: </span
+                      ><span class="value">pink;</span></span
+                    >
+                    }
+                  </code>
                   <code>
                     <span class="selector">li:nth-child(odd)</span> {
                     <span class="comment"
@@ -626,14 +657,15 @@
               <tr>
                 <td><code>:first-of-type</code></td>
                 <td>
-                  Selects the first element of its type among its siblings
+                  Selects the first element of its type (tag name) among its
+                  siblings
                 </td>
                 <td>
                   <code>
                     <span class="selector">p:first-of-type</span> {
                     <span class="comment"
-                      >/* Styles applied to the first paragraph among its
-                      siblings */</span
+                      >/* Styles applied to the first &lt;p&gt; element among
+                      its siblings */</span
                     ><span class="declaration">
                       <span class="property">color: </span
                       ><span class="value">red;</span></span
@@ -649,7 +681,7 @@
                   <code>
                     <span class="selector">p:last-of-type</span> {
                     <span class="comment"
-                      >/* Styles applied to the last paragraph among its
+                      >/* Styles applied to the last &lt;p&gt; element among its
                       siblings */</span
                     ><span class="declaration">
                       <span class="property">text-decoration: </span
@@ -660,16 +692,18 @@
                 </td>
               </tr>
               <tr>
-                <td><code>:nth-of-type()</code></td>
+                <td><code>:nth-of-type(n)</code></td>
                 <td>
                   Selects elements based on their position among siblings of the
-                  same type
+                  same type - can accept an algebraic expression to determine
+                  which elements are selected
                 </td>
                 <td>
                   <code>
-                    <span class="selector">p:nth-of-type(odd)</span> {
+                    <span class="selector">p:nth-of-type(even)</span> {
                     <span class="comment"
-                      >/* Styles applied to odd-numbered paragraphs */</span
+                      >/* Styles applied to even-numbered &lt;p&gt; elements
+                      */</span
                     ><span class="declaration">
                       <span class="property">font-weight: </span
                       ><span class="value">bold;</span></span
@@ -713,7 +747,9 @@
             <tbody>
               <tr>
                 <td><code>::before</code></td>
-                <td>Inserts content before the selected element</td>
+                <td>
+                  Inserts content before the content of the selected element
+                </td>
                 <td>
                   <code>
                     <span class="selector">p::before</span> {
@@ -723,13 +759,19 @@
                       <span class="property">content: </span
                       ><span class="value">"🔹";</span></span
                     >
+                    <span class="declaration">
+                      <span class="property">color: </span
+                      ><span class="value">darkblue;</span></span
+                    >
                     }
                   </code>
                 </td>
               </tr>
               <tr>
                 <td><code>::after</code></td>
-                <td>Inserts content after the selected element</td>
+                <td>
+                  Inserts content after the content of the selected element
+                </td>
                 <td>
                   <code>
                     <span class="selector">div::after</span> {
@@ -739,38 +781,9 @@
                       <span class="property">content: </span
                       ><span class="value">"⭐️";</span></span
                     >
-                    }
-                  </code>
-                </td>
-              </tr>
-              <tr>
-                <td><code>::first-line</code></td>
-                <td>Selects the first line of text within an element</td>
-                <td>
-                  <code>
-                    <span class="selector">p::first-line</span> {
-                    <span class="comment"
-                      >/* Styles applied to the first line of paragraphs
-                      */</span
-                    ><span class="declaration">
-                      <span class="property">font-style: </span
-                      ><span class="value">italic;</span></span
-                    >
-                    }
-                  </code>
-                </td>
-              </tr>
-              <tr>
-                <td><code>::last-line</code></td>
-                <td>Selects the last line of text within an element</td>
-                <td>
-                  <code>
-                    <span class="selector">p::last-line</span> {
-                    <span class="comment"
-                      >/* Styles applied to the last line of paragraphs */</span
-                    ><span class="declaration">
-                      <span class="property">font-weight: </span
-                      ><span class="value">bold;</span></span
+                    <span class="declaration">
+                      <span class="property">font-size: </span
+                      ><span class="value">20px;</span></span
                     >
                     }
                   </code>
@@ -794,17 +807,17 @@
                 </td>
               </tr>
               <tr>
-                <td><code>::last-letter</code></td>
-                <td>Selects the last letter of a specified element</td>
+                <td><code>::first-line</code></td>
+                <td>Selects the first line of text within an element</td>
                 <td>
                   <code>
-                    <span class="selector">p::last-letter</span> {
+                    <span class="selector">p::first-line</span> {
                     <span class="comment"
-                      >/* Styles applied to the last letter of paragraphs
+                      >/* Styles applied to the first line of paragraphs
                       */</span
                     ><span class="declaration">
-                      <span class="property">color: </span
-                      ><span class="value">green;</span></span
+                      <span class="property">font-style: </span
+                      ><span class="value">italic;</span></span
                     >
                     }
                   </code>
