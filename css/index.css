@@ -1,7 +1,48 @@
+:root {
+  font-family: "Lato", sans-serif;
+}
+
 .wrapper {
   background-color: aliceblue;
-  margin: 0 auto;
+  margin: 20px auto;
+  max-width: 900px;
+  padding: 20px 40px;
   width: 90%;
+}
+
+.main-section {
+  margin-bottom: 40px;
+}
+
+/*REFERENCE TABLES*/
+.reference-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 2px solid black;
+  table-layout: fixed;
+}
+
+.reference-table th,
+.reference-table td {
+  padding: 8px;
+  border: 2px solid black;
+}
+
+.reference-table th {
+  text-align: left;
+}
+
+.reference-table th.selector-name {
+  width: 20%;
+}
+
+.reference-table th.description {
+  width: 30%;
+}
+
+.reference-table th.code-example {
+  width: 50%;
 }
 
 /*CODE*/
@@ -16,7 +57,6 @@ code {
 .comment {
   color: grey;
   display: block;
-  white-space: nowrap;
 }
 
 .declaration {

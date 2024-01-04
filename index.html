@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/index.css" />
     <title>CSS Selectors Cheat Sheet</title>
   </head>
@@ -46,16 +52,18 @@
           <table class="reference-table">
             <thead>
               <tr>
-                <th class="column1">Selector</th>
-                <th>Description</th>
-                <th>Example</th>
+                <th class="selector-name">Selector</th>
+                <th class="description">Description</th>
+                <th class="code-example">Example</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Type<br /><code>element</code></td>
-                <td>Selects an element based on its HTML tag</td>
-                <td>
+                <td class="selector-name">Type<br /><code>element</code></td>
+                <td class="description">
+                  Selects an element based on its HTML tag
+                </td>
+                <td class="code-example">
                   <code>
                     <span class="selector">p</span> {
                     <span class="comment"
@@ -69,9 +77,11 @@
                 </td>
               </tr>
               <tr>
-                <td>Class<br /><code>.class</code></td>
-                <td>Selects every element with this class attribute</td>
-                <td>
+                <td class="selector-name">Class<br /><code>.class</code></td>
+                <td class="description">
+                  Selects every element with this class attribute
+                </td>
+                <td class="code-example">
                   <code>
                     <span class="selector">.link</span> {
                     <span class="comment"
@@ -85,14 +95,14 @@
                 </td>
               </tr>
               <tr>
-                <td>
+                <td class="selector-name">
                   Multiple classes<br /><code>.class1.class2.class3</code>
                 </td>
-                <td>
+                <td class="description">
                   Selects every element with these classes within its class
                   attribute
                 </td>
-                <td>
+                <td class="code-example">
                   <code>
                     <span class="selector">.menu.option.disabled</span> {
                     <span class="comment"
@@ -107,14 +117,14 @@
                 </td>
               </tr>
               <tr>
-                <td>
+                <td class="selector-name">
                   Specific elements by class<br /><code>element.class</code>
                 </td>
-                <td>
+                <td class="description">
                   Selects elements of the specified type with this class
                   attribute
                 </td>
-                <td>
+                <td class="code-example">
                   <code>
                     <span class="selector">p.important</span> {
                     <span class="comment"
@@ -129,9 +139,9 @@
                 </td>
               </tr>
               <tr>
-                <td>ID<br /><code>#id</code></td>
-                <td>Selects an element based on its ID</td>
-                <td>
+                <td class="selector-name">ID<br /><code>#id</code></td>
+                <td class="description">Selects an element based on its ID</td>
+                <td class="code-example">
                   <code>
                     <span class="selector">#logo</span> {
                     <span class="comment"
@@ -145,9 +155,9 @@
                 </td>
               </tr>
               <tr>
-                <td>Universal<br /><code>*</code></td>
-                <td>Selects all elements</td>
-                <td>
+                <td class="selector-name">Universal<br /><code>*</code></td>
+                <td class="description">Selects all elements</td>
+                <td class="code-example">
                   <code>
                     <span class="selector">*</span> {
                     <span class="comment"
@@ -170,16 +180,18 @@
           <table class="reference-table">
             <thead>
               <tr>
-                <th class="column1">Selector</th>
-                <th>Description</th>
-                <th>Example</th>
+                <th class="selector-name">Selector</th>
+                <th class="description">Description</th>
+                <th class="code-example">Example</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Grouping selector<br /><code>element, element</code></td>
-                <td>Selects multiple elements at once</td>
-                <td>
+                <td class="selector-name">
+                  Grouping selector<br /><code>element, element</code>
+                </td>
+                <td class="description">Selects multiple elements at once</td>
+                <td class="code-example">
                   <code>
                     <span class="selector">h2, p, .search</span> {
                     <span class="comment"
@@ -204,16 +216,20 @@
           <table class="reference-table">
             <thead>
               <tr>
-                <th class="column1">Selector</th>
-                <th>Description</th>
-                <th>Example</th>
+                <th class="selector-name">Selector</th>
+                <th class="description">Description</th>
+                <th class="code-example">Example</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Descendant<br /><code>element element</code></td>
-                <td>Selects all descendants of the specified element</td>
-                <td>
+                <td class="selector-name">
+                  Descendant<br /><code>element element</code>
+                </td>
+                <td class="description">
+                  Selects all descendants of the specified element
+                </td>
+                <td class="code-example">
                   <code>
                     <span class="selector">main p</span> {
                     <span class="comment"
@@ -228,11 +244,13 @@
                 </td>
               </tr>
               <tr>
-                <td>Child<br /><code>element > element</code></td>
-                <td>
+                <td class="selector-name">
+                  Child<br /><code>element > element</code>
+                </td>
+                <td class="description">
                   Selects only the direct descendants of the specified element
                 </td>
-                <td>
+                <td class="code-example">
                   <code>
                     <span class="selector">ul > li</span> {
                     <span class="comment"
@@ -247,12 +265,14 @@
                 </td>
               </tr>
               <tr>
-                <td>Adjacent sibling<br /><code>element + element</code></td>
-                <td>
+                <td class="selector-name">
+                  Adjacent sibling<br /><code>element + element</code>
+                </td>
+                <td class="description">
                   Selects any element which is directly after the specified
                   element
                 </td>
-                <td>
+                <td class="code-example">
                   <code>
                     <span class="selector">h1 + p</span> {
                     <span class="comment"
@@ -267,12 +287,14 @@
                 </td>
               </tr>
               <tr>
-                <td>General sibling<br /><code>element ~ element</code></td>
-                <td>
+                <td class="selector-name">
+                  General sibling<br /><code>element ~ element</code>
+                </td>
+                <td class="description">
                   Selects any element which comes after the specified element
                   and shares the same parent
                 </td>
-                <td>
+                <td class="code-example">
                   <code>
                     <span class="selector">p ~ img</span> {
                     <span class="comment"
@@ -296,19 +318,19 @@
           <table class="reference-table">
             <thead>
               <tr>
-                <th class="column1">Selector</th>
-                <th>Description</th>
-                <th>Example</th>
+                <th class="selector-name">Selector</th>
+                <th class="description">Description</th>
+                <th class="code-example">Example</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><code>[att]</code></td>
-                <td>
+                <td class="selector-name"><code>[att]</code></td>
+                <td class="description">
                   Selects all elements with the specified attribute, regardless
                   of its value
                 </td>
-                <td>
+                <td class="code-example">
                   <code>
                     <span class="selector">img[alt]</span> {
                     <span class="comment"
@@ -323,9 +345,11 @@
                 </td>
               </tr>
               <tr>
-                <td><code>[att=val]</code></td>
-                <td>Selects all elements with the specified attribute value</td>
-                <td>
+                <td class="selector-name"><code>[att=val]</code></td>
+                <td class="description">
+                  Selects all elements with the specified attribute value
+                </td>
+                <td class="code-example">
                   <code>
                     <span class="selector">input[type="submit"]</span> {
                     <span class="comment"
@@ -340,12 +364,12 @@
                 </td>
               </tr>
               <tr>
-                <td><code>[att~=val]</code></td>
-                <td>
+                <td class="selector-name"><code>[att~=val]</code></td>
+                <td class="description">
                   Selects an element based on whether its attribute contains a
                   specific value among multiple space-separated values
                 </td>
-                <td>
+                <td class="code-example">
                   <code>
                     <span class="selector">[class~="featured"]</span> {
                     <span class="comment"
@@ -360,12 +384,12 @@
                 </td>
               </tr>
               <tr>
-                <td><code>[att|=val]</code></td>
-                <td>
+                <td class="selector-name"><code>[att|=val]</code></td>
+                <td class="description">
                   Selects all elements where the attribute value starts the
                   specified value, or the specified value followed by a hyphen
                 </td>
-                <td>
+                <td class="code-example">
                   <code>
                     <span class="selector">[lang|="en"]</span> {
                     <span class="comment"
@@ -380,12 +404,12 @@
                 </td>
               </tr>
               <tr>
-                <td><code>[att^=val]</code></td>
-                <td>
+                <td class="selector-name"><code>[att^=val]</code></td>
+                <td class="description">
                   Selects all elements where the attribute value starts with a
                   specified string
                 </td>
-                <td>
+                <td class="code-example">
                   <code>
                     <span class="selector">a[href^="https"]</span> {
                     <span class="comment"
@@ -400,12 +424,12 @@
                 </td>
               </tr>
               <tr>
-                <td><code>[att$=val]</code></td>
-                <td>
+                <td class="selector-name"><code>[att$=val]</code></td>
+                <td class="description">
                   Selects all elements where the attribute value ends with a
                   specified string
                 </td>
-                <td>
+                <td class="code-example">
                   <code>
                     <span class="selector">img[src$=".png"]</span> {
                     <span class="comment"
@@ -420,12 +444,12 @@
                 </td>
               </tr>
               <tr>
-                <td><code>[att*=val]</code></td>
-                <td>
+                <td class="selector-name"><code>[att*=val]</code></td>
+                <td class="description">
                   Selects all elements where the attribute value contains a
                   specified substring
                 </td>
-                <td>
+                <td class="code-example">
                   <code>
                     <span class="selector">[class*="btn"]</span> {
                     <span class="comment"
@@ -449,16 +473,16 @@
           <table class="reference-table">
             <thead>
               <tr>
-                <th class="column1">Selector</th>
-                <th>Description</th>
-                <th>Example</th>
+                <th class="selector-name">Selector</th>
+                <th class="description">Description</th>
+                <th class="code-example">Example</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><code>:link</code></td>
-                <td>Selects unvisited links</td>
-                <td>
+                <td class="selector-name"><code>:link</code></td>
+                <td class="description">Selects unvisited links</td>
+                <td class="code-example">
                   <code>
                     <span class="selector">a:link</span> {
                     <span class="comment"
@@ -472,9 +496,9 @@
                 </td>
               </tr>
               <tr>
-                <td><code>:visited</code></td>
-                <td>Selects visited links</td>
-                <td>
+                <td class="selector-name"><code>:visited</code></td>
+                <td class="description">Selects visited links</td>
+                <td class="code-example">
                   <code>
                     <span class="selector">a:visited</span> {
                     <span class="comment"
@@ -488,9 +512,11 @@
                 </td>
               </tr>
               <tr>
-                <td><code>:hover</code></td>
-                <td>Selects an element when the mouse is over it</td>
-                <td>
+                <td class="selector-name"><code>:hover</code></td>
+                <td class="description">
+                  Selects an element when the mouse is over it
+                </td>
+                <td class="code-example">
                   <code>
                     <span class="selector">a:hover</span> {
                     <span class="comment"
@@ -504,9 +530,9 @@
                 </td>
               </tr>
               <tr>
-                <td><code>:active</code></td>
-                <td>Selects the active link</td>
-                <td>
+                <td class="selector-name"><code>:active</code></td>
+                <td class="description">Selects the active link</td>
+                <td class="code-example">
                   <code>
                     <span class="selector">a:active</span> {
                     <span class="comment"
@@ -520,12 +546,12 @@
                 </td>
               </tr>
               <tr>
-                <td><code>:focus</code></td>
-                <td>
+                <td class="selector-name"><code>:focus</code></td>
+                <td class="description">
                   Selects the element that has focus, such as when a user clicks
                   on a form element or selects an element using the tab key
                 </td>
-                <td>
+                <td class="code-example">
                   <code>
                     <span class="selector">input:focus</span> {
                     <span class="comment"
@@ -539,12 +565,12 @@
                 </td>
               </tr>
               <tr>
-                <td><code>:checked</code></td>
-                <td>
+                <td class="selector-name"><code>:checked</code></td>
+                <td class="description">
                   Selects input elements that are checked, like checkboxes or
                   radio buttons
                 </td>
-                <td>
+                <td class="code-example">
                   <code>
                     <span class="selector">input:checked</span> {
                     <span class="comment"
@@ -558,12 +584,12 @@
                 </td>
               </tr>
               <tr>
-                <td><code>:disabled</code></td>
-                <td>
+                <td class="selector-name"><code>:disabled</code></td>
+                <td class="description">
                   Selects elements that are disabled (cannot be activated or
                   focused on)
                 </td>
-                <td>
+                <td class="code-example">
                   <code>
                     <span class="selector">button:disabled</span> {
                     <span class="comment"
@@ -576,13 +602,12 @@
                   </code>
                 </td>
               </tr>
-
               <tr>
-                <td><code>:first-child</code></td>
-                <td>
+                <td class="selector-name"><code>:first-child</code></td>
+                <td class="description">
                   Selects the first element among a group of sibling elements
                 </td>
-                <td>
+                <td class="code-example">
                   <code>
                     <span class="selector">p:first-child</span> {
                     <span class="comment"
@@ -597,11 +622,11 @@
                 </td>
               </tr>
               <tr>
-                <td><code>:last-child</code></td>
-                <td>
+                <td class="selector-name"><code>:last-child</code></td>
+                <td class="description">
                   Selects the last element among a group of sibling elements
                 </td>
-                <td>
+                <td class="code-example">
                   <code>
                     <span class="selector">div:last-child</span> {
                     <span class="comment"
@@ -615,13 +640,13 @@
                 </td>
               </tr>
               <tr>
-                <td><code>:nth-child(n)</code></td>
-                <td>
+                <td class="selector-name"><code>:nth-child(n)</code></td>
+                <td class="description">
                   Selects elements based on their position in a group of
                   siblings - can accept an algebraic expression to determine
                   which elements are selected
                 </td>
-                <td>
+                <td class="code-example">
                   <code>
                     <span class="selector">li:nth-child(3)</span> {
                     <span class="comment"
@@ -655,12 +680,12 @@
                 </td>
               </tr>
               <tr>
-                <td><code>:first-of-type</code></td>
-                <td>
+                <td class="selector-name"><code>:first-of-type</code></td>
+                <td class="description">
                   Selects the first element of its type (tag name) among its
                   siblings
                 </td>
-                <td>
+                <td class="code-example">
                   <code>
                     <span class="selector">p:first-of-type</span> {
                     <span class="comment"
@@ -675,9 +700,11 @@
                 </td>
               </tr>
               <tr>
-                <td><code>:last-of-type</code></td>
-                <td>Selects the last element of its type among its siblings</td>
-                <td>
+                <td class="selector-name"><code>:last-of-type</code></td>
+                <td class="description">
+                  Selects the last element of its type among its siblings
+                </td>
+                <td class="code-example">
                   <code>
                     <span class="selector">p:last-of-type</span> {
                     <span class="comment"
@@ -692,13 +719,13 @@
                 </td>
               </tr>
               <tr>
-                <td><code>:nth-of-type(n)</code></td>
-                <td>
+                <td class="selector-name"><code>:nth-of-type(n)</code></td>
+                <td class="description">
                   Selects elements based on their position among siblings of the
                   same type - can accept an algebraic expression to determine
                   which elements are selected
                 </td>
-                <td>
+                <td class="code-example">
                   <code>
                     <span class="selector">p:nth-of-type(even)</span> {
                     <span class="comment"
@@ -713,9 +740,11 @@
                 </td>
               </tr>
               <tr>
-                <td><code>:not(selector)</code></td>
-                <td>Selects elements that do not match a specific selector</td>
-                <td>
+                <td class="selector-name"><code>:not(selector)</code></td>
+                <td class="description">
+                  Selects elements that do not match a specific selector
+                </td>
+                <td class="code-example">
                   <code>
                     <span class="selector">p:not(.special)</span> {
                     <span class="comment"
@@ -739,18 +768,18 @@
           <table class="reference-table">
             <thead>
               <tr>
-                <th class="column1">Selector</th>
-                <th>Description</th>
-                <th>Example</th>
+                <th class="selector-name">Selector</th>
+                <th class="description">Description</th>
+                <th class="code-example">Example</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><code>::before</code></td>
-                <td>
+                <td class="selector-name"><code>::before</code></td>
+                <td class="description">
                   Inserts content before the content of the selected element
                 </td>
-                <td>
+                <td class="code-example">
                   <code>
                     <span class="selector">p::before</span> {
                     <span class="comment"
@@ -768,11 +797,11 @@
                 </td>
               </tr>
               <tr>
-                <td><code>::after</code></td>
-                <td>
+                <td class="selector-name"><code>::after</code></td>
+                <td class="description">
                   Inserts content after the content of the selected element
                 </td>
-                <td>
+                <td class="code-example">
                   <code>
                     <span class="selector">div::after</span> {
                     <span class="comment"
@@ -790,9 +819,11 @@
                 </td>
               </tr>
               <tr>
-                <td><code>::first-letter</code></td>
-                <td>Selects the first letter of a specified element</td>
-                <td>
+                <td class="selector-name"><code>::first-letter</code></td>
+                <td class="description">
+                  Selects the first letter of a specified element
+                </td>
+                <td class="code-example">
                   <code>
                     <span class="selector">p::first-letter</span> {
                     <span class="comment"
@@ -807,9 +838,11 @@
                 </td>
               </tr>
               <tr>
-                <td><code>::first-line</code></td>
-                <td>Selects the first line of text within an element</td>
-                <td>
+                <td class="selector-name"><code>::first-line</code></td>
+                <td class="description">
+                  Selects the first line of text within an element
+                </td>
+                <td class="code-example">
                   <code>
                     <span class="selector">p::first-line</span> {
                     <span class="comment"
@@ -824,11 +857,11 @@
                 </td>
               </tr>
               <tr>
-                <td><code>::selection</code></td>
-                <td>
+                <td class="selector-name"><code>::selection</code></td>
+                <td class="description">
                   Styles the portion of an element that is selected by the user
                 </td>
-                <td>
+                <td class="code-example">
                   <code>
                     <span class="selector">::selection</span> {
                     <span class="comment"
